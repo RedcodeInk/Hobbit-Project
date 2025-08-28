@@ -1,4 +1,6 @@
 import QuoteContainer from '../components/QuoteFlow/QuoteContainer';
+import TextPressure from '../components/text_pressure';
+import ShinyText from '../components/shiny_text';
 
 const Home = () => {
     return (
@@ -7,11 +9,25 @@ const Home = () => {
             <div className="bg-red-500 text-white py-16">
                 {/* <div className="max-w-4xl mx-auto px-6 text-center"> */}
                 <h1 className="text-4xl font-bold mb-4">
-                    Redcode Motor Insurance
+                    <TextPressure
+                        text="Redcode Motor Insurance"
+                        flex={true}
+                        alpha={false}
+                        stroke={false}
+                        width={true}
+                        weight={true}
+                        italic={true}
+                        textColor="#ffffff"
+                        strokeColor="#ff0000"
+                        minFontSize={36}
+                    />
                 </h1>
-                <p className="text-xl text-blue-100">
-                    Simple, reliable car insurance quotes in minutes
-                </p>
+                <ShinyText
+                    text="Simple, reliable car insurance quotes in minutes"
+                    disabled={false}
+                    speed={3}
+                    className='custom-class'
+                />
                 {/* </div> */}
             </div>
 
